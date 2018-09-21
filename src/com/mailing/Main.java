@@ -14,11 +14,11 @@ public class Main {
             // Connect to the mail host server
             mail.login("imaps", "imap.gmail.com", 993, "INBOX","username@gmail.com", "password");
             
-            // Get unread message count in folder 
+            // Get unread message count
             unreadMessages = mail.getMessageCount(2);
             System.out.println("Unread messages: " + unreadMessages);
             
-            // Get unread messages in folder
+            // Get unread messages
             messages = mail.getMessages(Flag.SEEN, false);
             
             // Print-screen unread messages & download attachments
